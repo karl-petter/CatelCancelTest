@@ -1,0 +1,20 @@
+﻿<catel:DataWindow x:Class="CancelTest.Views.StartStopView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				  xmlns:catel="http://catel.codeplex.com"
+                  Title="Set the state of the machine"
+                  >
+    
+    <!-- Resources -->
+    <catel:DataWindow.Resources>
+    </catel:DataWindow.Resources>
+
+    <!-- Content -->
+    <StackPanel>
+		<Label Content="Set the machines state"/>
+		<StackPanel Orientation="Horizontal">
+			<Button x:Name="StartButton" Content="Start" Command="{Binding StartMachine}"/>
+            <Button x:Name="StopButton" Content="Stop" Command="{Binding StopMachine}"/>
+		</StackPanel>
+	</StackPanel>
+</catel:DataWindow>

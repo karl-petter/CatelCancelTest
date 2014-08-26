@@ -1,0 +1,16 @@
+﻿<catel:DataWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:catel="http://catel.codeplex.com"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        mc:Ignorable="d" 
+        x:Class="CancelTest.MainWindow"
+        Title="Cancel Test"
+        >
+    <StackPanel>
+        <Button Content="View machine control" Command="{Binding ViewStartStopUICommand}"/>
+        <Label Content="Is the machine running?"/>
+        <TextBlock Text="{Binding Path=CurrentMachine.Running}"/>
+    </StackPanel>
+</catel:DataWindow>
